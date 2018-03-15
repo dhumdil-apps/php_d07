@@ -1,20 +1,21 @@
 <?php
 
-class Targaryen
-{
-    public function resistsFire(){
-        return False;
-    }
-
-    public function getBurned()
+    class Targaryen
     {
-        if ($this->resistsFire())
+        public function resistsFire()
         {
-            return "emerges naked but unharmed";
+            return False;
         }
-        else
+
+        public function getBurned()
         {
-            return "burns alive";
+            if ($this->resistsFire())
+            {
+                return "emerges naked but unharmed";
+            }
+            else
+            {
+                return "burns alive";
+            }
         }
     }
-}
